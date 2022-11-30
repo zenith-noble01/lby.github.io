@@ -1,4 +1,4 @@
-import { Features, Hero, Navbar } from "./Components";
+import { Features, Hero, Navbar, Newmembers } from "./Components";
 import "./app.scss";
 
 function App() {
@@ -7,6 +7,7 @@ function App() {
       <Navbar />
       <Hero />
       <Features />
+      <Newmembers />
     </div>
   );
 }
