@@ -1,0 +1,49 @@
+.app__newmembers {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .students__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+
+    .president {
+      background: #f095b4;
+      border-radius: 50% 0 50% 0;
+      overflow: hidden;
+      position: relative;
+      transition: var(--trans);
+
+      &:hover {
+        border-radius: 10%;
+        cursor: pointer;
+
+        img {
+          transform: scale(1.1);
+        }
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        transition: var(--trans);
+      }
+    }
+    img {
+      width: 100%;
+    }
+    .others {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: 1fr 1fr;
+
+      .img {
+        background: blue;
+        border-radius: 10%;
+        position: relative;
+      }
+    }
+  }
+}
