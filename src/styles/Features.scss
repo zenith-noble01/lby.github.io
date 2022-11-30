@@ -1,0 +1,110 @@
+.app__feature {
+  height: 85vh;
+  padding: 10%;
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  .features__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5rem;
+
+    .feature {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      max-width: 400px;
+
+      h1 {
+        color: var(--l__black);
+      }
+      p {
+        font-size: 1.1rem;
+      }
+      .icon {
+        height: 70px;
+        width: 70px;
+        background: blue;
+        position: relative;
+        border-radius: 50%;
+
+        &.on0 {
+          background: #f8d271;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 10px;
+            background: #c6c6fa;
+            right: -30px;
+            top: 0;
+            bottom: 0;
+            margin: auto 0;
+          }
+        }
+        &.on1 {
+          background: #e9f8f5;
+          border-radius: 5px;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            background: #7dd5bc;
+            right: 0px;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            border-radius: 50%;
+          }
+        }
+        &.on2 {
+          background: #a7a5f9;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #7c71f3;
+            right: -30px;
+            top: 0;
+            transform: rotate(45deg);
+          }
+        }
+        &.on3 {
+          background: #79a7f5;
+          &::after {
+            content: "";
+            position: absolute;
+            height: 50px;
+            width: 10px;
+            background: #b2cef6;
+            right: 10px;
+            transform: rotate(-45deg);
+            top: 40%;
+          }
+        }
+        &.on4 {
+          background: #f095b4;
+          border-radius: 5px;
+          transform: rotate(45deg);
+        }
+        &.on5 {
+          background: #f5c559;
+          &::after {
+            content: "";
+
+            position: absolute;
+            height: 20px;
+            width: 20px;
+            background: #f095b4;
+            right: -30px;
+            top: 0;
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}

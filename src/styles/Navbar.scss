@@ -1,0 +1,50 @@
+.app__navbar {
+  background: white;
+  width: 80%;
+  height: 70px;
+  border-radius: 35px;
+  position: fixed;
+  top: 20px;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 999;
+
+  .logo {
+    font-size: 1.2rem;
+    font-weight: 900;
+    cursor: pointer;
+    color: var(--l__black);
+  }
+
+  .routes {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+
+    li {
+      cursor: pointer;
+      text-transform: capitalize;
+      font-weight: 700;
+      color: var(--l__black);
+    }
+  }
+
+  .cta__btns {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+
+    button {
+      padding: 0.7rem 1.5rem;
+      border-radius: 20px;
+      transition: var(--trans);
+      color: var(--l__black);
+      font-size: 1rem;
+    }
+  }
+}

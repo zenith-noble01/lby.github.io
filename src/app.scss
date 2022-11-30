@@ -1,0 +1,40 @@
+:root {
+  --main-bg: #f0f9f8;
+  --trans: 0.5s ease-in-out;
+  --blue: #55bdb4;
+  --l__black: #0f2435;
+}
+
+body {
+  background: white;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-weight: 700;
+}
+
+ul {
+  list-style: none;
+}
+
+.app__header {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-items: center;
+
+  h1 {
+    color: #888;
+    text-transform: uppercase;
+  }
+
+  p {
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--l__black);
+  }
+}
