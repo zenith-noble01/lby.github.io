@@ -13,20 +13,20 @@ const Newmembers = () => {
       <div className="students__container">
         <div className="president">
           <img src={user} alt="" />
+
+          <div className="text__container">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem
+            itaque hic officia ex consequatur necessitatibus fuga, asperiores
+            expedita natus earum veniam unde modi corrupti quibusdam soluta.
+            Aspernatur est amet assumenda.
+          </div>
         </div>
         <div className="others">
-          <div className="img">
-            <img src={user} alt="" />
-          </div>
-          <div className="img">
-            <img src={user} alt="" />
-          </div>
-          <div className="img">
-            <img src={user} alt="" />
-          </div>
-          <div className="img">
-            <img src={user} alt="" />
-          </div>
+          {Array.from({ length: 4 }).map((item, index) => (
+            <div className="img">
+              <img src={user} alt="" />
+            </div>
+          ))}
         </div>
       </div>
     </div>
