@@ -10,7 +10,7 @@ const Hero = () => {
       <div className="home_wrapper">
         <div className="leftcontainer">
           <p>
-            GBHS <span>YDE</span>
+            Learn <span>Smart</span>
           </p>
           <span>Building the next leaders of continent!</span>
 
